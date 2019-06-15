@@ -1,0 +1,15 @@
+//*------------------------------------*\
+// Variables Path rutas a los assets
+//*------------------------------------*/
+/**
+ * La ruta relativa a la carpeta img desde los css | use background-image
+ * @nuclide Root
+ * @section Variables Background-image > Config
+ */
+$img-path: "../img" !default;
+/**
+ * La ruta relativa a la carpeta de fuentes
+ * @nuclide Root
+ * @section Variables Typo > Config
+ */
+$font-path: "../fonts" !default;

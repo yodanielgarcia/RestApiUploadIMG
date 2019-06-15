@@ -1,0 +1,12 @@
+{
+    "title": "Guía de Estilos | Decameron",
+    "files": [
+        "src/assets/scss/**/*.scss"
+    ],
+    "target": "dist/styleguide",
+    "namespace": null,
+    "verbose": 3,
+    "counterCSS": null,
+    "staticLipsum": false,
+    "placeholderService": false
+}

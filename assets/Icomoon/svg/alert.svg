@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>warning-weather-interface-outlined-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <g id="3.-GENERACIÓN-DE-CONTRATO" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Información-del-contrato-lleno-con-Pick-Up" transform="translate(-343.000000, -935.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(299.000000, 934.000000)">
+                <g id="warning-weather-interface-outlined-symbol" transform="translate(44.000000, 1.000000)">
+                    <path d="M9.91664744,5.54347826 C9.47437991,5.54347826 9.18209877,5.93767858 9.18209877,6.32777265 L9.18209877,11.0417515 C9.18209877,11.5139706 9.47437991,11.826087 9.91664744,11.826087 C10.358915,11.826087 10.6512346,11.4318456 10.6512346,11.0417515 L10.6512346,6.32777265 C10.6512346,5.85555352 10.358915,5.54347826 9.91664744,5.54347826 Z" id="Shape"></path>
+                    <ellipse id="Oval" cx="9.91666667" cy="14.0434783" rx="1" ry="1"></ellipse>
+                    <path d="M19.45899,14.3677942 L11.1468679,0.813959028 C10.4548616,-0.271319676 9.37661923,-0.271319676 8.68461293,0.813959028 L0.376514121,14.3677942 C-0.468377283,15.8377799 0.147186454,17 1.83696926,17 L17.918069,17 C19.6883177,17 20.3038814,15.8417889 19.45899,14.3677942 Z M18.15142,16.226496 L1.68408415,16.226496 C0.839192748,16.226496 0.529399233,15.6069152 0.992077859,14.910393 L9.45708507,1.12577418 C9.68641274,0.660076227 10.1490914,0.660076227 10.4588446,1.12577418 L18.9238519,14.910393 C19.3061049,15.6069152 18.9963114,16.226496 18.15142,16.226496 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,131 @@
+/*------------------------------------*\
+  C25 - Tabs
+  Description: Alerta de exito
+  Type: Toolbar
+  Path: /components/ResponseBar.vue
+\*------------------------------------*/
+
+.ay-c-tab {
+  padding-bottom: 24px;
+}
+
+.ay-c-tab_disable {
+  .ay-c-tab__item {
+    .ay-c-tab__label {
+      pointer-events: none;
+      color: $c-on-light;
+
+    }
+  }
+}
+
+.ay-c-tab__content {
+  overflow: hidden;
+}
+
+.ay-c-tab__wrapper {
+  width: 100%;
+}
+
+.ay-c-tab__list {
+  @include flexbox;
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.ay-c-tab__item {
+  margin-right: 24px;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all .3s linear;
+  }
+  &.ay-c-tab__item_current {
+    &:before {
+      width: 100%;
+      background-color: $c-primary;
+      transition: all .3s linear;
+    }
+    // border-bottom: 4px solid $c-primary;
+  }
+}
+
+.ay-c-tab__label {
+  display: block;
+  padding-bottom: 4px;
+  font-family: $f-bold;
+  @include font-rem(16px);
+  color: $c-on;
+  cursor: pointer;
+}
+
+.ay-c-tab__set {
+  display: none;
+  &.ay-c-tab__set_current {
+    display: block;
+  }
+}
+
+.ay-c-tab__row {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: $c-bg-extra-light;
+  //el contenido de esta tab es vacio
+  &.ay-c-tab__row_empty {
+    padding: 26px;
+  }
+  &.ay-c-tab__row_all {
+    background-color: $c-neutro;
+  }
+  .ay-c-tab__inner {
+    width: 100%;
+  }
+  .ay-form__checkbox {
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+  .ay-form__col {
+    .ay-form__checkbox {
+      margin-top: 0;
+    }
+  }
+}
+
+.ay-c-tab__disable {
+  .ay-c-tab__inner {
+    width: calc(100% - 32px);
+  }
+  .ay-c-tab__col-check {
+    .ay-form__input-no-appearance+.ay-form__check {
+      display: block;
+    }
+    .ay-form__input-no-appearance {
+      &:checked+.ay-form__check {
+        &:before {
+          background-color: $c-primary;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.ay-c-tab__alert-txt {
+  font-family: $f-bold;
+  @include font-rem(18px);
+}
+
+.ay-c-tab__row_query {
+  .ay-c-form__row_wide {
+    display: none;
+  }
+}

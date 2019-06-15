@@ -1,0 +1,125 @@
+/*------------------------------------*\
+  Transversal Elements
+  #Styles for layout theme
+\*------------------------------------*/
+
+// contenedor section
+
+
+// Inner generic for components
+.ay-canvas {
+  width: $canvas-wide-w; //* 88%
+  max-width: $canvas-huge-mw; //* 1214px
+  margin: 0 auto;
+}
+
+.ay-canvas_wide {
+  width: $canvas-medium-w; //* 90%
+  max-width: $canvas-wide-mw; //* 920px
+  margin: 0 auto;
+}
+
+.ay-canvas__border {
+  border-top: 1px solid $c-border-medium;
+}
+
+.ay-hidden {
+  display: none;
+}
+
+// Clase para darle un padding top al contenido
+// de la pagina y poder convvir con el fixed de 
+// manera correcta
+.ay-search-fixed {
+  padding-top: 84px;
+}
+
+// Layout a dos columnas
+.ay-layout-grid {
+  @include flexbox();
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+  .ay-layout-aside {
+    width: 18%;
+    min-width: 170px;
+    background-color: $c-bg-extra-light;
+  }
+
+  .ay-layout-content {
+    width: 82%;
+    padding-top: 10px;
+    &.ay-layout-content_fixed-bar {
+      padding-bottom: 56px;
+    }
+  }
+
+    .ay-layout-content__inner {
+      padding: 20px;
+    }
+
+.ay-grid-wide {
+  @include flexbox;
+  padding: 14px 0 0;
+}
+  .ay-grid-wide__item-content {
+    width: 60%;
+  }
+  .ay-grid-wide__item-aside {
+    width: 40%;
+  }
+
+.ay-view {
+  transition: all .3s linear;
+  &.ay-view_fixed-bar {
+    padding-bottom: 56px;
+  }
+  &.ay-view_fixed-bar_hide {
+    padding-bottom: 0;
+  }
+  &.ay-view_modal {
+    height: 100vh;
+    overflow: hidden;
+    &:after {
+      content: '';
+      position: fixed;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10002;
+      background-color: rgba(0, 0, 0, 0.70);
+    }
+  }
+}
+
+.ay-layout-vh {
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  min-height: calc(100vh - 230px);
+  padding-bottom: 20px;
+  margin-top: 20px;
+  background-color: $c-bg-extra-light;
+}
+
+@include media-query(medium-max) {
+  .ay-grid-wide {
+    @include flex-direction(column);
+  }
+    .ay-grid-wide__item-content {
+      width: 100%;
+    }
+
+    .ay-grid-wide__item-aside {
+      width: 100%;
+    }
+    .ay-view {
+      &.ay-view_fixed-bar {
+        padding-bottom: 120px;
+      }
+    }
+}

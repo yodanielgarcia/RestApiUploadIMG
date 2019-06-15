@@ -1,0 +1,108 @@
+/*------------------------------------*\
+  C13 - CollapseForm
+  Description: Se despliega al hacer
+  click en el botón "Registrar comentario"
+  del componente "fixed-bar".
+  Type: Form
+  Path: /components/CollapseForm.vue
+\*------------------------------------*/
+
+/**
+  * Class: .ay-c-collapse-form
+  * @molecule Block: CollapseForm
+  * @section C13 CollapseForm
+  * @markup
+  *  <div class="ay-c-collapse-form">
+  *    <div class="ay-c-collapse-form__lead">
+  *      <p class="ay-c-collapse-form__title">Realizar comentarios sobre este contrato</p>
+  *    </div>
+  *    <div class="ay-c-collapse-form__content">
+  *      <div class="ay-form__item">
+  *        <label class="ay-form__label" for="name"> Prioridad</label>
+  *        <div class="ay-c-collapse-form__grid">
+  *          <div class="ay-form__radiobox">
+  *            <input class="ay-form__input-no-appearance" id="radio-custom" type="radio" name="priotiry-level" value="radio-custom" />
+  *            <label class="ay-form__radio" for="radio-custom"><span class="ay-form__radio-label"> Alta</span></label>
+  *          </div>
+  *          <div class="ay-form__radiobox">
+  *            <input class="ay-form__input-no-appearance" id="radio-custom" type="radio" name="priotiry-level" value="radio-custom" />
+  *            <label class="ay-form__radio" for="radio-custom"><span class="ay-form__radio-label"> Media</span></label>
+  *          </div>
+  *          <div class="ay-form__radiobox">
+  *            <input class="ay-form__input-no-appearance" id="radio-custom" type="radio" name="priotiry-level" value="radio-custom" />
+  *            <label class="ay-form__radio" for="radio-custom"><span class="ay-form__radio-label"> Baja</span></label>
+  *          </div>
+  *        </div>
+  *      </div>
+  *      <div class="ay-form__item">
+  *        <div class="ay-form__control i-arrow-down">
+  *          <select class="ay-form__select-no-appearance">
+  *            <option value="observacion-general" selected="selected">Observacion general</option>
+  *            <option value="opcion-2">opcion 2</option>
+  *            <option value="opcion-2">opcion 3</option>
+  *            <option value="opcion-2">opcion 3</option>
+  *          </select>
+  *        </div>
+  *      </div>
+  *      <div class="ay-form__item">
+  *        <label class="ay-form__label" for="name">Comentarios</label>
+  *        <textarea class="ay-form__field" id="name" type="text" name="name"></textarea>
+  *      </div>
+  *      <div class="ay-form__item ay-c-collapse-form__grid">
+  *        <button class="ay-btn" type="button">Registrar comentario</button>
+  *        <button class="ay-btn ay-btn_outline" type="button">Cancelar</button>
+  *      </div>
+  *    </div>
+  *  </div>
+  */
+.ay-c-collapse-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10004;
+  opacity: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  transform: translateY(100%);
+  transition: all .3s linear;
+  // Clase para mostrar el componente CollapseForm
+  &.ay-c-collapse-form_show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .ay-form__col {
+    margin-bottom: 0;
+  }
+}
+
+.ay-c-collapse-form__inner {
+  width: 82%;
+  margin: 0 0 0 auto;
+}
+
+.ay-c-collapse-form__lead {
+  padding: 10px 20px;
+  color: $c-neutro;
+  background-color: $c-primary;
+}
+
+.ay-c-collapse-form__content {
+  padding: 14px 20px;
+  background-color: $c-bg-extra-light;
+}
+
+.ay-c-collapse-form__grid {
+  @include flexbox();
+  @include align-items(center);
+  .ay-btn {
+    margin: 10px 20px 0 0;
+    margin-right: 20px;
+  }
+}
+
+.ay-c-collapse-form {
+  .ay-form__radiobox {
+    margin-right: 40px;
+  }
+}

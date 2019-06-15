@@ -1,0 +1,71 @@
+/*------------------------------------*\
+  C09 - FormAdd
+  Description: Cuando se hace click en el
+  botón de este componente, los inputs que
+  contiene se duplican hacia abajo.
+  Se puede agregar al formulario un número
+  indeterminado de casillas.
+  Type: Form
+  Path: /components/FormAdd.vue
+\*------------------------------------*/
+
+/**
+  * Class: .ay-c-form-add
+  * @molecule Block: FormAdd
+  * @section C09 FormAdd
+  * @markup
+  *  <fieldset class="ay-c-form-add">
+  *    <legend class="ay-legend">Datos de contacto</legend>
+  *    <div class="ay-c-form-add__inner">
+  *      <div class="ay-c-form-add__row">
+  *        <div class="ay-form__item">
+  *          <label class="ay-form__label" for="typePhone">Tipo de teléfono<span class="ay-form__sup">*</span></label>
+  *          <div class="ay-form__control i-arrow-down">
+  *            <select class="ay-form__select-no-appearance" data-vv-as="Tipo de teléfono" aria-required="false" aria-invalid="false">
+  *              <option value="Personal">Personal</option>
+  *              <option value="Laboral">Laboral</option>
+  *            </select>
+  *          </div><span></span>
+  *        </div>
+  *        <div class="ay-form__item">
+  *          <label class="ay-form__label" for="numberPhone">Numero de teléfono<span class="ay-form__sup">*</span></label>
+  *          <input class="ay-form__field" name="numberPhone1" data-vv-as="Numero de teléfono" type="number" aria-required="false" aria-invalid="false" /><span></span>
+  *        </div>
+  *        <div class="ay-form__item">
+  *          <label class="ay-form__label" for="Extension">Extension
+  *            <!-- -->
+  *          </label>
+  *          <input class="ay-form__field" name="Extension1" data-vv-as="Extension" type="text" aria-required="false" aria-invalid="false" /><span></span>
+  *        </div>
+  *        <div class="ay-form__item">
+  *          <button class="ay-btn-ico ay-btn_primary i-plus" type="button">AÑADIR TELÉFONO</button>
+  *        </div>
+  *      </div>
+  *    </div>
+  *  </fieldset>
+  */
+  .ay-c-form-add {
+    .ay-form__col {
+      &.ay-form__col_end {
+        @include flexbox;
+        @include align-items(flex-start);
+        margin-top: 42px;
+        .ay-btn,
+        .ay-btn-ico {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .ay-btn-ico {
+      padding: 7px 14px;
+    }
+  }
+
+
+// .ay-c-form-add {
+//   .ay-btn,
+//   .ay-btn-ico {
+//     min-width: initial;
+//     width: 100%;
+//   }
+// }

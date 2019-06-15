@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="39px" viewBox="0 0 56 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-96.000000, -629.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M143.3125,630.70625 L123.9125,653.339583 L104.5125,630.70625 C102.5625,628.43125 99.4125,628.43125 97.4625,630.70625 C95.5125,632.98125 95.5125,636.65625 97.4625,638.93125 L120.4125,665.70625 C122.3625,667.98125 125.5125,667.98125 127.4625,665.70625 L150.4125,638.93125 C152.3625,636.65625 152.3625,632.98125 150.4125,630.70625 C148.4625,628.489583 145.2625,628.43125 143.3125,630.70625 Z" id="arrow-down"></path>
+        </g>
+    </g>
+</svg>
