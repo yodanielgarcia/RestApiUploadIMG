@@ -14,7 +14,7 @@
     "ajv": "^6.6.1",
     "axios": "^0.18.0",
     "bootstrap-vue": "^2.0.0-rc.16",
-    "express-handlebars": "^3.0.2",
+    "express-handlebars": "^5.3.1",
     "i18next": "^12.1.0",
     "nightwatch": "^1.0.19",
     "pug": "^2.0.3",
